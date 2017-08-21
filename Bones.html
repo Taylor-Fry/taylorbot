@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			#answ{
+				font-size: 50px;
+			}
+		</style>
+		<script type="text/javascript">
+			 function ask() {
+  			  var Question = document.getElementById("ASK").value;
+  				  var Trim = Question.trim();
+  				  var q = Trim.toLowerCase();
+  				  var ques = ["my", "best tv", "worst","is", "I", "best", "love"];
+  				  var ques2 = ["dank", "show", "show", "apocalypse", "good", "youtuber", "you"];
+  				  var ans = ["No they are normie memes", "It's Bones and if you don't agree you can fight me", "Honey Bo Bo is the worst, i'm a robot and even I know that", "Yes it is, so you better be NICE TO ME!", "No your not, your a grommet!", "Jenna Marbles, Jacks Films, and Threadbanger.", "No, i'm to swood for you."];
+  				  console.log(ques);
+			    for (var i = 0; i < 100; i++) {
+			     if  (q.includes(ques[i]) && q.includes(ques2[i]) ){
+			      document.getElementById("answ").innerHTML = ans[i];
+			      i = 100;
+			     } else if (q == ""){
+			      document.getElementById("answ").innerHTML = "Fill in the box stupid";
+			     } else {
+			      document.getElementById("answ").innerHTML = "Thats a stupid quesion ya GROMMET";
+			     }
+			    }
+
+			   }
+
+		</script>
+	</head>
+	<body>
+		
+		
+
+ 				<div class="row">
+ 					<div class="col-sm-4" > 		
+ 					
+					</div>
+
+ 					<div class="col-sm-4" >
+ 						<div class="form-group">
+ 						<label for="comment">QUESTION:</label>
+ 							 <textarea id="ASK" class="form-control" rows="5" id="comment"></textarea>
+					   	</div>				 
+						<button onclick="ask()" type="button" class="btn btn-success">ASK</button>
+
+ 					</div>
+
+					<div class="col-sm-4">
+						<p id=answ> </p>
+					</div>
+
+				</div>
+     		   		
+				
+			</div>
+		</div>
+	</body>
+</html>
